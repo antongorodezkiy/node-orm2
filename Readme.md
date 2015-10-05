@@ -594,6 +594,8 @@ Person.get(1, function (err, John) {
 });
 ```
 
+## Removing Items
+
 If you want to remove an instance, just do:
 
 ```js
@@ -604,6 +606,17 @@ Person.get(1, function (err, John) {
 	});
 });
 ```
+
+### Truncate
+
+If you want to truncate table, you could use 
+
+```js
+Person.clear(function (err) {
+	console.log("removed!");
+});
+```
+
 
 ## Validations
 
